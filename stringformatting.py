@@ -43,3 +43,5 @@ print(f"The value of pi up to 3 decimal places is {pi:.2f}")
 # Another example of modifier with percentage
 percentage = 0.7567
 print(f"The percentage is {percentage:.2%}")
+
+
