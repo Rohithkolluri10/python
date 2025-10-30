@@ -5,3 +5,7 @@ Conditionals
 Loops
 Decorators
 Functions
+
+
+Collections
+List has been added to the Repo
