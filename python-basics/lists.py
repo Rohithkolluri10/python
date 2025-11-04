@@ -61,3 +61,46 @@ while i < len(mylist):
     print(mylist[i])
     i += 1
 print(mylist)
+
+
+
+# list Comprehension
+squares = [x**2 for x in range(10)]
+print(squares)
+
+#understanding the list Comprehension
+
+additioninrange = [ x + 2 for x in range(10)]
+print(additioninrange)
+
+
+primenumbersinlist = [ x % 2 !=0 for x in range(10)]
+print(primenumbersinlist)
+
+
+mytestlist = ["rohith", "gauthami","mummy","daddy","gudi"]
+newlist = [x.upper() for x in mytestlist if "mummy" in x]
+print(newlist)
+
+
+
+# sorting a list
+sortlist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+sortlist.sort()
+print(sortlist)
+
+# reversing a list
+sortlist.reverse()
+print(sortlist)
+
+# Sorting a number list
+
+numberlistsort = [100, 50, 65, 82, 23]
+numberlistsort.reverse()
+newlist_forcopying = numberlistsort.copy()
+copyingthroughconstructor = list(newlist_forcopying)
+copyingthroughsliceoperation = copyingthroughconstructor[:]
+print(numberlistsort)
+print(newlist_forcopying)
+print(copyingthroughconstructor)
+print(copyingthroughsliceoperation)
