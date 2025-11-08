@@ -51,3 +51,97 @@ if "make" in dict_With_types:
 
 dict_With_types.update({"make":"Suzuki"})
 print(dict_With_types)
+
+# Removing items from the dictionay
+# dict_With_types.pop("make")
+# print(dict_With_types)
+
+# popitem() will remove the last item in the dictionary
+
+# dict_With_types.popitem()
+# print(dict_With_types)
+
+# clear will empties the dict
+
+# dict_With_types.clear()
+# print(dict_With_types)
+
+# del keyword will entirely delete the dict
+
+# looing through dictionaries 
+
+for x in dict_With_types:
+    print(x)
+
+for x in dict_With_types:
+    print(dict_With_types[x])
+
+
+for x in dict_With_types.values():
+    print(x)
+
+for x,y in dict_With_types.items():
+    print(x,y)
+
+# Copying the Dictionary , We cannot copy traditionally using + symbol.
+
+# we can use copy metho or the dict keyword
+
+mydict_prep = dict_With_types.copy()
+print(mydict_prep)
+
+my_dict_prep_always = dict(dict_With_types)
+print(dict_With_types)
+
+# Nested Dictionaries
+
+# Contains Dictionaries within dictionary
+
+myfamily = {
+    "child1" : {
+        "name": "emily",
+        "year": 2004
+    },
+
+    "child2": {
+        "name": "tobias",
+        "year": 2005
+    },
+
+    "child3": {
+        "name": "linux",
+        "Year": 2007
+    }
+}
+
+print(myfamily)
+
+# we can also create three dict individually and add it to new dict
+
+friend1 = {
+    "name": "Deekshith",
+    "Area": "Dharmaram"
+}
+
+friend2 = {
+    "name": "Kalyan",
+    "Area": "Labour colony"
+}
+
+friend3 = {
+    "name": "Akhil",
+    "Area": "Geesukonda"
+}
+
+friends_dict = {
+    "friend1": friend1,
+    "friend2": friend2,
+    "friend3": friend3
+}
+
+print(friends_dict["friend3"]["Area"])
+
+for x, obj in friends_dict.items():
+    print(x)
+    for y in obj:
+        print(y + ":", obj[y])
