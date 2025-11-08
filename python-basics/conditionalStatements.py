@@ -75,3 +75,26 @@ if len(name) > 0:
     print(f"welcome, {name}!")
 else:
     print("Username cannot be empty")
+
+
+# Short hand if Statments
+
+a = 1
+
+if a == 1:print("A is equals to one")
+
+
+a = 20
+b = 200
+
+print("A") if a > b else print("B")
+
+
+# Ternary Operators in Python
+
+a = 600
+b = 900
+
+# Here the  bigger is getting assigned with the out of the tenary operator
+bigger = a if a > b else b
+print("Bigger is ", bigger)
