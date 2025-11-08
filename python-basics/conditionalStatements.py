@@ -98,3 +98,5 @@ b = 900
 # Here the  bigger is getting assigned with the out of the tenary operator
 bigger = a if a > b else b
 print("Bigger is ", bigger)
+
+
